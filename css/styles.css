@@ -91,6 +91,20 @@ body {
   color: #38bdf8;
 }
 
+.active-link {
+  color: #38bdf8 !important;
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* =========================
    HERO SECTION
 ========================= */
@@ -248,6 +262,11 @@ body {
   text-decoration: none;
 }
 
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 /* =========================
    CONTACT
 ========================= */
@@ -286,20 +305,60 @@ body {
 }
 
 /* =========================
+   SCROLL ANIMATIONS
+========================= */
+
+.section,
+.hero-content {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section.active,
+.hero-content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
    RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 768px) {
 
   .navbar {
-    flex-direction: column;
-    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .nav-links {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
+
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #0f172a;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px 0;
+
+    gap: 20px;
+
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .hero-content h1 {
