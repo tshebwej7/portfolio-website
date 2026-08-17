@@ -1,97 +1,194 @@
-/* =========================
-   MOBILE MENU TOGGLE
-========================= */
+/* =========================================================
+   PORTFOLIO WEBSITE
+   JIRES TSHEBWE
+   MAIN JAVASCRIPT
+   ========================================================= */
 
-const menuToggle = document.querySelector('.menu-toggle');
+/* =========================================================
+   1. DOM ELEMENTS
+   ========================================================= */
 
-const navLinks = document.querySelector('.nav-links');
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const navigationLinks = document.querySelectorAll(".nav-links a");
 
-menuToggle.addEventListener('click', () => {
+const sections = document.querySelectorAll("main section");
 
-  navLinks.classList.toggle('active');
+const heroContent = document.querySelector(".hero-content");
 
-});
+/* =========================================================
+   2. MOBILE NAVIGATION
+   ========================================================= */
 
-/* =========================
-   CLOSE MOBILE MENU
-========================= */
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("active");
 
-const navItems = document.querySelectorAll('.nav-links a');
+    menuToggle.setAttribute("aria-expanded", isOpen);
 
-navItems.forEach(link => {
+    if (isOpen) {
+      menuToggle.setAttribute("aria-label", "Close navigation menu");
 
-  link.addEventListener('click', () => {
+      menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    } else {
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
 
-    navLinks.classList.remove('active');
-
+      menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
   });
+}
 
-});
+/* =========================================================
+   3. CLOSE MOBILE MENU AFTER CLICKING A LINK
+   ========================================================= */
 
-/* =========================
-   ACTIVE NAVIGATION LINKS
-========================= */
-
-const sections = document.querySelectorAll('section');
-
-window.addEventListener('scroll', () => {
-
-  let current = '';
-
-  sections.forEach(section => {
-
-    const sectionTop = section.offsetTop;
-
-    if (scrollY >= sectionTop - 200) {
-
-      current = section.getAttribute('id');
-
+navigationLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (!navLinks || !menuToggle) {
+      return;
     }
 
+    navLinks.classList.remove("active");
+
+    menuToggle.setAttribute("aria-expanded", "false");
+
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+    menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
   });
-
-  navItems.forEach(link => {
-
-    link.classList.remove('active-link');
-
-    if (link.getAttribute('href') === `#${current}`) {
-
-      link.classList.add('active-link');
-
-    }
-
-  });
-
 });
 
-/* =========================
-   SCROLL REVEAL ANIMATION
-========================= */
+/* =========================================================
+   4. ACTIVE NAVIGATION LINK
+   ========================================================= */
 
-const revealElements = document.querySelectorAll(
-  '.section, .hero-content'
-);
+const updateActiveNavigation = () => {
+  let currentSection = "";
 
-const revealOnScroll = () => {
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 150;
 
-  revealElements.forEach(element => {
+    const sectionHeight = section.offsetHeight;
 
-    const windowHeight = window.innerHeight;
+    const scrollPosition = window.scrollY;
 
-    const revealTop = element.getBoundingClientRect().top;
-
-    const revealPoint = 100;
-
-    if (revealTop < windowHeight - revealPoint) {
-
-      element.classList.add('active');
-
+    if (
+      scrollPosition >= sectionTop &&
+      scrollPosition < sectionTop + sectionHeight
+    ) {
+      currentSection = section.getAttribute("id");
     }
-
   });
 
+  navigationLinks.forEach((link) => {
+    link.classList.remove("active-link");
+
+    const targetSection = link.getAttribute("href");
+
+    if (targetSection === `#${currentSection}`) {
+      link.classList.add("active-link");
+    }
+  });
 };
 
-window.addEventListener('scroll', revealOnScroll);
+window.addEventListener("scroll", updateActiveNavigation);
 
-revealOnScroll();
+/* =========================================================
+   5. SCROLL REVEAL
+   ========================================================= */
+
+const revealElements = [
+  ...document.querySelectorAll(".section"),
+  heroContent,
+].filter(Boolean);
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.12,
+  },
+);
+
+revealElements.forEach((element) => {
+  revealObserver.observe(element);
+});
+
+/* =========================================================
+   6. INITIAL HERO ANIMATION
+   ========================================================= */
+
+window.addEventListener("load", () => {
+  if (heroContent) {
+    heroContent.classList.add("active");
+  }
+
+  updateActiveNavigation();
+});
+
+/* =========================================================
+   7. KEYBOARD ACCESSIBILITY
+   ========================================================= */
+
+document.addEventListener("keydown", (event) => {
+  if (
+    event.key === "Escape" &&
+    navLinks &&
+    navLinks.classList.contains("active")
+  ) {
+    navLinks.classList.remove("active");
+
+    if (menuToggle) {
+      menuToggle.setAttribute("aria-expanded", "false");
+
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+      menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+  }
+});
+
+/* =========================================================
+   8. CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+   ========================================================= */
+
+document.addEventListener("click", (event) => {
+  if (!navLinks || !menuToggle) {
+    return;
+  }
+
+  const clickedInsideNavigation = navLinks.contains(event.target);
+
+  const clickedMenuButton = menuToggle.contains(event.target);
+
+  if (
+    navLinks.classList.contains("active") &&
+    !clickedInsideNavigation &&
+    !clickedMenuButton
+  ) {
+    navLinks.classList.remove("active");
+
+    menuToggle.setAttribute("aria-expanded", "false");
+
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+    menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  }
+});
+
+/* =========================================================
+   9. CURRENT YEAR
+   ========================================================= */
+
+const footerYear = document.querySelector(".footer-year");
+
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
