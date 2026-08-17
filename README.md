@@ -16,7 +16,7 @@ The website is continuously updated as I develop new skills, complete additional
 
 **Visit my portfolio:**
 
-YOUR_PORTFOLIO_LIVE_URL
+https://tshebwej7.github.io/portfolio-website/
 
 ---
 
