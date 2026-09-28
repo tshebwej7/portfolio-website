@@ -6,297 +6,158 @@
 
 This repository contains my personal developer portfolio website.
 
-The portfolio showcases my web development skills, certifications, practical projects, and ongoing progression toward becoming a Full-Stack Web Developer.
+The portfolio showcases my web development skills, certifications, practical projects, and progression toward full-stack development.
 
 The website is continuously updated as I complete new learning milestones and build new projects.
 
 ## Live Portfolio
 
-**Portfolio:**
 https://tshebwej7.github.io/portfolio-website/
 
 ## About Me
 
-I am an aspiring Full-Stack Web Developer focused on building responsive, interactive, and user-friendly web experiences.
+I am a **Junior Web Developer building toward Full-Stack Development**, focused on creating responsive, interactive, and user-friendly web experiences.
 
-My development journey has included structured learning through freeCodeCamp and WeThinkCode\_, combined with practical project development using modern web technologies.
+My development journey combines structured learning through **freeCodeCamp** and **WeThinkCode_** with practical project development, Git/GitHub workflows, responsive UI implementation, deployment, and Generative AI-assisted software development.
 
-I have completed freeCodeCamp's Responsive Web Design certification and JavaScript curriculum.
+I have completed freeCodeCamp's **Responsive Web Design certification** and **JavaScript curriculum**.
 
-I am also certified in **Generative AI for Software Development through WeThinkCode\_**, where I developed practical knowledge of using Generative AI within software development workflows.
+I am also **certified in Generative AI for Software Development through WeThinkCode_**, with practical experience applying Generative AI to code comprehension, documentation, debugging, testing, refactoring, and software-development workflows.
 
-My practical projects range from responsive frontend websites and JavaScript applications to professional website development and interactive booking systems.
+## Skills & Technologies
 
-My long-term goal is to become a well-rounded Full-Stack Web Developer capable of building complete web applications from frontend interfaces through to backend systems and databases.
-
----
-
-# Skills & Technologies
-
-## Frontend Development
+### Frontend Development
 
 - HTML5
 - CSS3
 - JavaScript
 - Responsive Web Design
 - Tailwind CSS
+- Flexbox
+- CSS Grid
+- Chart.js
 
-## Development Tools
+### Development Tools
 
 - Git
 - GitHub
 - Visual Studio Code
 - Browser Developer Tools
+- GitHub Pages
 
-## Generative AI
+### Generative AI for Software Development
 
-- AI-assisted software development
-- Code understanding
+- AI-assisted coding
+- Code comprehension
 - Documentation
 - Debugging
 - Testing
 - Refactoring
+- Code verification
 - Learning frameworks, libraries, and APIs
 - AI-assisted development workflows
 
----
+## Certifications & Completed Learning
 
-# Certifications & Learning
+### Responsive Web Design — freeCodeCamp
 
-## Responsive Web Design
+**Status: Certified**
 
-**freeCodeCamp**
+Completed the Responsive Web Design certification, developing practical skills in HTML, CSS, responsive layouts, accessibility, Flexbox, CSS Grid, and modern responsive web development.
 
-**Status:** Certified
+### JavaScript — freeCodeCamp
 
-Completed the Responsive Web Design certification, developing practical skills in HTML, CSS, responsive layouts, accessibility, Flexbox, and modern responsive web development.
-
----
-
-## JavaScript
-
-**freeCodeCamp**
-
-**Status:** Completed
+**Status: Completed**
 
 Completed the JavaScript curriculum, developing practical knowledge of JavaScript programming and interactive web development.
 
----
+### Generative AI for Software Development — WeThinkCode_
 
-## Generative AI for Software Development
+**Status: Certified**
 
-**WeThinkCode\_**
+Earned certification in Generative AI for Software Development, with practical exposure to using Generative AI for code understanding, documentation, debugging, testing, refactoring, code assistance, and learning software technologies.
 
-**Status:** Certified
+## Featured Projects
 
-Earned certification in Generative AI for Software Development.
-
-The course covered practical applications of Generative AI within software development, including code assistance, codebase understanding, documentation, debugging, testing, refactoring, and learning new technologies.
-
----
-
-# Featured Projects
-
-## Elsha Trading Solution
+### Elsha Trading Solution
 
 A professional corporate website developed for **Elsha Trading Solution**, a South African electrical contracting company.
 
-The project focuses on creating a modern, responsive, accessible, and professional digital presence while presenting the company's services, projects, team, and business information.
+The project focuses on a modern, responsive, accessible, and professional digital presence while presenting the company's services, projects, team, and business information.
 
-### Technologies
+**Technologies:** HTML5, Tailwind CSS, JavaScript
 
-- HTML5
-- Tailwind CSS
-- JavaScript
-- Responsive Web Design
-- Git
-- GitHub
+### The Fade Room
 
-### Project Focus
+A professional responsive barber shop website developed as part of the **Talent Forge Junior Full-Stack Developer Practical Assessment**.
 
-- Professional corporate website
-- Responsive design
-- Accessible interface
-- Reusable website components
-- Modern navigation
-- Services presentation
-- Project presentation
-- Corporate information
-- Git and GitHub workflow
-- Web deployment
+The project demonstrates a complete customer journey from discovering services to selecting a service, choosing a barber, scheduling an appointment, entering customer information, and adding the appointment to a personal calendar.
 
----
+**Live Website:** https://tshebwej7.github.io/the-fade-room-website/
 
-## The Fade Room
+**Technologies:** HTML5, CSS3, JavaScript, Tailwind CSS, Google Fonts, Google Calendar integration, Apple Calendar-compatible `.ics` generation
 
-**The Fade Room** is a professional responsive barber shop website developed as part of the **Talent Forge Junior Full-Stack Developer Practical Assessment**.
+### Admin Dashboard
 
-The project demonstrates a complete customer journey from discovering services to selecting a service, choosing a barber, scheduling an appointment, entering customer information, completing the booking, and adding the appointment to a personal calendar.
+A responsive admin dashboard demonstrating JavaScript application interfaces, dark mode, localStorage persistence, sidebar navigation, statistics cards, recent orders, and Chart.js data visualization.
 
-### Live Website
+**Live Website:** https://tshebwej7.github.io/admin-dashboard/
 
-https://tshebwej7.github.io/the-fade-room-website/
+**GitHub:** https://github.com/tshebwej7/admin-dashboard
 
-### Technologies
+### AI Code Exercises
 
-- HTML5
-- CSS3
-- JavaScript
-- Tailwind CSS
-- Google Fonts
-- Google Calendar integration
-- Apple Calendar-compatible `.ics` generation
+A practical collection of software-development exercises exploring code comprehension, documentation, debugging, testing, refactoring, performance optimization, and AI solution verification.
 
-### Features
+**GitHub:** https://github.com/tshebwej7/ai-code-exercises
 
-- Responsive homepage
-- Services page
-- About page
-- Barber team information
-- Appointment booking
-- Service selection
-- Barber selection
-- Date selection
-- Time selection
-- Customer information form
-- Dynamic appointment duration
-- Google Calendar event generation
-- Apple Calendar-compatible `.ics` generation
-- First-visit promotional popup
-- Terms & Conditions page
-- Responsive desktop, tablet, and mobile layouts
+## Other Projects
 
-### Assessment Focus
+### SmartWatch Pro Landing Page
 
-The project demonstrates practical skills in:
+Responsive product landing page built with HTML5 and CSS3.
 
-- Frontend development
-- Responsive web design
-- JavaScript functionality
-- Form handling
-- Dynamic data processing
-- Calendar integration
-- User experience design
-- Website testing
-- Git and GitHub workflow
-- Web deployment
+**Live:** https://tshebwej7.github.io/SmartWatch-Pro-Landing-Page/
 
----
+**GitHub:** https://github.com/tshebwej7/SmartWatch-Pro-Landing-Page
 
-# Other Projects
+### Python Technical Documentation
 
-## SmartWatch Pro Landing Page
+Responsive technical documentation website demonstrating structured content, navigation, readable typography, and responsive design.
 
-A responsive product landing page developed to demonstrate HTML, CSS, responsive layouts, visual hierarchy, and user-focused interface design.
+**Live:** https://tshebwej7.github.io/python-technical-documentation/
 
-### Technologies
+**GitHub:** https://github.com/tshebwej7/python-technical-documentation
 
-- HTML5
-- CSS3
-- Responsive Web Design
+### Developer Survey Form
 
-### Live Website
+Responsive survey application demonstrating structured forms, user input elements, accessibility, and JavaScript interaction.
 
-https://tshebwej7.github.io/SmartWatch-Pro-Landing-Page/
+**Live:** https://tshebwej7.github.io/developer-survey-form/
 
-### GitHub
+**GitHub:** https://github.com/tshebwej7/developer-survey-form
 
-https://github.com/tshebwej7/SmartWatch-Pro-Landing-Page
+### BookVault Inventory App
 
----
+Web application project demonstrating book inventory management, responsive UI, reading status, ratings, and practical frontend development.
 
-## Python Technical Documentation
+**Live:** https://tshebwej7.github.io/book-inventory-app/
 
-A structured technical documentation website demonstrating semantic HTML, organized navigation, information architecture, readable typography, and responsive design.
+**GitHub:** https://github.com/tshebwej7/book-inventory-app
 
-### Technologies
+## Development Journey
 
-- HTML5
-- CSS3
-- Responsive Web Design
+**Responsive Web Design → JavaScript → Generative AI for Software Development → Practical Web Development Projects → Interactive Web Applications → Professional Website Development → Full-Stack Development**
 
-### Live Website
+The next stages of my development journey include deeper work with backend technologies, APIs, databases, authentication, and complete full-stack applications.
 
-https://tshebwej7.github.io/python-technical-documentation/
-
-### GitHub
-
-https://github.com/tshebwej7/python-technical-documentation
-
----
-
-## Developer Survey Form
-
-A responsive survey form demonstrating structured HTML forms, accessible labels, user input elements, and responsive design principles.
-
-### Technologies
-
-- HTML5
-- CSS3
-- Responsive Web Design
-
-### Live Website
-
-https://tshebwej7.github.io/developer-survey-form/
-
-### GitHub
-
-https://github.com/tshebwej7/developer-survey-form
-
----
-
-## Book Inventory App
-
-A web application project focused on managing book information while strengthening practical JavaScript and application development skills.
-
-### Technologies
-
-- HTML5
-- CSS3
-- JavaScript
-
-### Live Website
-
-https://tshebwej7.github.io/book-inventory-app/
-
-### GitHub
-
-https://github.com/tshebwej7/book-inventory-app
-
----
-
-# Development Journey
-
-My development journey has progressed through several stages:
-
-**Responsive Web Design**
-↓
-**JavaScript**
-↓
-**Generative AI for Software Development**
-↓
-**Practical Web Development Projects**
-↓
-**Interactive Web Applications**
-↓
-**Professional Website Development**
-↓
-**Full-Stack Web Development**
-
-The projects in this portfolio represent different stages of this progression.
-
----
-
-# Portfolio Features
-
-The portfolio website includes:
+## Portfolio Features
 
 - Responsive design
 - Mobile navigation
 - Semantic HTML
 - Accessible navigation
-- Responsive project cards
-- Project screenshots
+- Project showcases
 - Live project links
 - GitHub repository links
 - Smooth scrolling
@@ -308,44 +169,9 @@ The portfolio website includes:
 - SEO-friendly metadata
 - Reduced-motion accessibility support
 
----
-
-# Project Structure
-
-```text
-portfolio-website/
-│
-├── assets/
-│   ├── icons/
-│   ├── images/
-│   │   ├── Book_Vault_Inventory.png
-│   │   ├── Elsha_trading.jpeg
-│   │   ├── portfolio_website.jpeg
-│   │   ├── smart_watch.png
-│   │   ├── survey_form.png
-│   │   ├── tech_doc.png
-│   │   └── The_Fade_Room.jpg
-│   │
-│   └── resume/
-│
-├── css/
-│   └── styles.css
-│
-├── js/
-│   └── script.js
-│
-├── index.html
-├── README.md
-└── .gitignore
-```
-
----
-
-# Development Workflow
+## Development Workflow
 
 This portfolio is developed and maintained using Git and GitHub.
-
-Typical workflow:
 
 ```bash
 git status
@@ -354,44 +180,34 @@ git commit -m "Update portfolio"
 git push
 ```
 
-The portfolio is deployed using GitHub Pages.
+The website is deployed using GitHub Pages.
 
----
-
-# Continuous Development
+## Continuous Development
 
 This portfolio is an ongoing project.
 
-As I continue developing my Full-Stack Web Development skills, I will continue adding new projects, technologies, certifications, and professional experience.
+As I continue developing my full-stack skills, I will continue adding new projects, technologies, certifications, and professional experience.
 
 Future areas of development include:
 
 - Backend development
-- Databases
 - APIs
-- Full-stack applications
+- Databases
 - Authentication
+- Full-stack applications
 - Modern JavaScript frameworks
 - Additional professional projects
 
----
+## Connect With Me
 
-# Connect With Me
+**GitHub:** https://github.com/tshebwej7
 
-### GitHub
+**LinkedIn:** https://www.linkedin.com/in/tshebwej7/
 
-https://github.com/tshebwej7
-
-### LinkedIn
-
-https://www.linkedin.com/in/tshebwej7/
-
----
-
-# Author
+## Author
 
 **Jires Tshebwe**
 
-Aspiring Full-Stack Web Developer
+Junior Web Developer | Building Toward Full-Stack Development
 
 © 2026 Jires Tshebwe. All rights reserved.
